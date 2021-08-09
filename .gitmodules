@@ -1,0 +1,3 @@
+[submodule "TextAnalyzer"]
+	path = TextAnalyzer
+	url = https://github.com/daultonb/TextAnalyzer

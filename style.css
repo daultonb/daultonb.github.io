@@ -3,3 +3,23 @@
     color:rgb(31,31,31);
     padding-bottom: 30px;
 }
+.img-container{
+    background-color: aquamarine;
+    display:block;
+}
+
+.project-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.project-img-L{
+    display: inline-block;
+    margin-left: 25%;
+    margin-right: auto;
+}
+.project-img-R{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
