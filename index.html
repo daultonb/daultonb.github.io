@@ -14,9 +14,6 @@
                     document.getElementsByClassName("form-check-label")[0].innerHTML = "Light mode";
                     document.body.style.backgroundColor = "#fff";
                     document.body.style.color = "#313131";
-                    
-                    //let accordions= document.querySelectorAll(".accordion-header");
-                    //console.log(accordions);
     
                 }
                 else{
@@ -25,10 +22,6 @@
                     document.body.style.color = "#fff";
                 }
             }
-            
-        
-            
-        
         </script>
     </head>
 <body style="overflow-x: hidden;">
@@ -63,10 +56,6 @@
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="https://github.com/daultonb" target="_blank">GitHub</a></li>
                                     <li><a class="dropdown-item" href="https://www.linkedin.com/in/daulton-baird-37004a177" target="_blank">LinkedIn</a></li>
-                                    <!--
-                                        <li><hr class="dropdown-divider"></li>
-                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                    -->
                                 </ul>
                         </li>
                         <!--This is the switch-->
@@ -85,8 +74,8 @@
             </div>
         </nav>
     </div>
-    <div class="row justify-content-center" style="background-color: #313131;">
-        <div class="col-7" style="background-color: #313131;">
+    <div class="row justify-content-center background">
+        <div class="col-7 background">
             <div class="container">
                 
                 <div class="row mb-3">
@@ -94,7 +83,7 @@
                     <!--<p><span class="badge bg-warning">Note</span>This website is a work in progress.</p>-->
                     <h4 id="aboutme" class="display-4">About Me</h4>
                     <p class="lead">I am a Computer Science graduate of The University of British Columbia's Bachelor of Science program with a minor in Data Science. 
-                        I am passionate about finding ways to automate tasks to make life easier for everyone. 
+                        I am passionate about finding ways to automate tasks improve everyday life. 
                         I am currently seeking a Software Engineer or a Data Scientist role to get industry experience and to continue to learn and grow as a software developer.
                         If you would like to contact me, please email me at <a href="mailto:daultonbaird1@gmail.com" target="_blank" title="Link to email me">daultonbaird1@gmail.com</a>.
                     </p>
@@ -105,10 +94,63 @@
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingOne">
                                 <button class="accordion-button collapsed bg-success text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                    <h4>Project 1: UBC Curriculum MAP</h4> 
+                                    <h4>Project 1: CentralSquare Property Tax Application</h4> 
                                 </button>
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <h5>Project Sponsor: CentralSquare Technologies</h5>
+                                    <p>
+                                        <table class="table">
+                                            <tr>
+                                                <th>Project Link</th>
+                                                <td><a href="https://www.centralsquare.com/solutions/public-administration-software" target="_blank" title="CentralSquare Public Admin website">CentralSquare Public Admin website</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th>Project Description</th>
+                                                <td>This project involves building a web-based property tax application for tax clerks to use to manage a citizen's property taxes.</td>
+                                            </tr>
+                                            <tr>
+                                                <th>My Responsibilities</th>
+                                                <td>
+                                                    <ul>
+                                                        <li>Developing, testing, and releasing new features written in C# using the .NET framework.</li>
+                                                        <li>Design and write unit tests that provide adequate code coverage for an entire module.</li>
+                                                        <li>Analyzed and debugged error and warning logs using Elastic Kibana logging system.</li>
+                                                        <li>Deploying to test environments using Continuous Integration (CI) and Continuous Delivery (CD) pipelines, Docker, and Azure Devops.</li>
+                                                        <li>Applied RESTful standards to REST API endpoints and used Postman and Swagger UI for testing the API.</li>
+                                                        <li>Participate in creating coding standards, best practices documentation, and quality release notes.</li>
+                                                        <li>Developing, testing, and releasing package updates for the Vue.js frontend framework.</li>
+                                                        <li>Communicate with and conduct software demonstrations for internal and external customers.</li>
+                                                        <li>Improved on my SQL querying abilities and learned how to utilize Language-Integrated Query (LINQ) queries in C#.</li>
+                                                    </ul>
+
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>Project Framework</th>
+                                                <td>This project was built using <span class="badge bg-secondary">C#</span> <span class="badge bg-secondary">Vue.js</span> <span class="badge bg-secondary">SQL</span> <span class="badge bg-secondary">JavaScript</span> <span class="badge bg-secondary">Docker</span> <span class="badge bg-secondary">Kibana</span></td>
+                                            </tr>
+                                        </table>
+                                        <!--
+                                        <h6>Sample Screenshot (Click to visit)</h6>
+                                        <div class="img-container">
+                                            <a href="https://curriculum.ok.ubc.ca/" target="_blank" title="Curriculum MAP link">
+                                                <img class="project-img" src="resources\img\ubc-curriculum-map.png" width=800/> 
+                                            </a>
+                                        </div>
+                                        -->
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed bg-success text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <h4>Project 2: UBC Curriculum MAP</h4> 
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     
                                     <h5>Project Sponsor: UBC Okanagan - Office of the Provost and Vice Principal</h5>
@@ -120,7 +162,7 @@
                                             </tr>
                                             <tr>
                                                 <th>Project Description</th>
-                                                <td>This project goal was to create a website to to allow instructors and program coordinators to work collaboratively on both new and existing courses and 
+                                                <td>This project's goal was to create a website to to allow instructors and program coordinators to work collaboratively on both new and existing courses and 
                                                     their mapping of course learning outcomes to program learning outcomes. </td>
                                             </tr>
                                             <tr>
@@ -148,20 +190,17 @@
                                                 <img class="project-img" src="resources\img\ubc-curriculum-map.png" width=800/> 
                                             </a>
                                         </div>
-                                        <!--<br><h5>iframe of Website</h5>
-                                        <iframe src="https://curriculum.ok.ubc.ca/" height="1000" width="1000" title="Iframe Example" style="border: 1px solid #313131;"></iframe>
-                                        -->
                                     </p>
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed bg-success text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    <h4>Project 2: Time Estimator </h4>
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed bg-success text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <h4>Project 3: Time Estimator </h4>
                                 </button>
                             </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <h5>Project Sponsor: UBC Okanagan - Office of the Provost and Vice Principal</h5>
                                     <p>
@@ -205,12 +244,12 @@
                             </div>
                         </div>
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed bg-success text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    <h4>Project 3: Text Analyzer </h4>
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed bg-success text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    <h4>Project 4: Text Analyzer </h4>
                                 </button>
                             </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <h5>Project Sponsor: UBC Okanagan - MakerspaceUBCO</h5>
                                     <p>
@@ -252,12 +291,12 @@
                             </div>
                         </div>
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingFour">
-                                <button class="accordion-button collapsed bg-success text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    <h4>Project 4: DDR Discussion Forum</h4>
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed bg-success text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    <h4>Project 5: DDR Discussion Forum</h4>
                                 </button>
                             </h2>
-                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <h5>Project Sponsor: UBC Okanagan - Web Development Course Project</h5>
                                     <p>
@@ -299,12 +338,12 @@
                             </div>
                         </div>
                         <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingFive">
-                                <button class="accordion-button collapsed bg-success text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                    <h4>Project 5: Friend Finder App</h4>
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed bg-success text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    <h4>Project 6: Friend Finder App</h4>
                                 </button>
                             </h2>
-                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <h5>Project Sponsor: UBC Okanagan - Human Computer Interaction (HCI) Course Project</h5>
                                     <p>
