@@ -5,6 +5,7 @@
     max-width: 880px; 
 	margin: 0 auto !important; 
 	float: none !important; 
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 .background {
     background-color: #313131;
@@ -16,11 +17,11 @@
     background-color: white;
     display:block;
 }
-
 .project-img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 800px;
 }
 .project-img-L {
     display: inline-block;
@@ -31,4 +32,21 @@
     display: inline-block;
     margin-left: auto;
     margin-right: auto;
+}
+p, ul, td {
+    font-family: Arial, Helvetica, sans-serif;
+}
+p.lead {
+    font-size: 13pt;
+}
+img.headshot {
+    width: 200px;
+    height: auto;
+    float: right;
+    margin-left: 30%;
+    border-radius: 50%;
+}
+.intro {
+    display: flex;
+    align-items: center;
 }

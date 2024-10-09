@@ -6,26 +6,8 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
         
         <title>Daulton Baird's Website</title>
-        <link rel="shortcut icon" type="image/jpg" href="resources/img/d-logo.png"/>
-        <script>
-            function changeMode(){ //change site from light to dark mode
-                var mode_switch = document.getElementsByClassName("form-check-input");
-                if(mode_switch[0].checked === true){
-                    document.getElementsByClassName("form-check-label")[0].innerHTML = "Light mode";
-                    document.body.style.backgroundColor = "#fff";
-                    document.body.style.color = "#313131";
-    
-                }
-                else{
-                    document.getElementsByClassName("form-check-label")[0].innerHTML = "Dark mode";
-                    document.body.style.backgroundColor = '#313131';
-                    document.body.style.color = "#fff";
-                }
-            }
-        </script>
     </head>
 <body style="overflow-x: hidden;">
-    
     <div class="header">
         <nav class="navbar navbar-expand-lg navbar-dark bg-success">
             <div class="container-fluid">
@@ -34,9 +16,6 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <img class="mt-1" src="resources\img\d-logo.png" height=70%/>
-                        </li>
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
@@ -58,17 +37,6 @@
                                     <li><a class="dropdown-item" href="https://www.linkedin.com/in/daulton-baird-37004a177" target="_blank">LinkedIn</a></li>
                                 </ul>
                         </li>
-                        <!--This is the switch-->
-                        <!-- needs to be fixed so that the text and background color of the divs change
-                        <li class="nav-item" style="padding-top: 8px;">
-                            <div class="form-check form-switch">
-                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" onclick="changeMode()" checked/>
-                                <label class="form-check-label" for="flexSwitchCheckDefault">
-                                    Light mode
-                                </label>
-                            </div>
-                        </li>-->
-
                     </ul>
                 </div>
             </div>
@@ -80,66 +48,71 @@
                 <div class="main">
                     <div class="content">     
                         <div class="row mb-3">
-                            <h3 class="display-3" style="display:inline;">Daulton Baird</h3>
-                            <h4 id="aboutme" class="display-4">About Me</h4>
-                            <p class="lead">I am a Software Developer with my Bachelor of Science from The University of British Columbia with a minor in Data Science. 
-                                I am passionate about finding ways to use Artificial Intelligence automate tasks to improve everyday life. 
-                                I am currently seeking a Software Engineer or a Data Scientist role to use my software engineering skills to build scalable and meaningful projects.
+                            <div class="intro">
+                                <h3 class="display-3">Daulton Baird</h3>
+                                <img class="headshot" src="resources\img\DaultonHeadshot.jpg" alt="picture of me">
+                            </div>
+                            <h6 id="aboutme" class="display-6">About</h6>
+                            <p class="lead">I am an extremely passionate software developer that enjoys finding ways to create innovative software 
+                                and use Artificial Intelligence to automate tasks, improve code, and simplify many aspects of life. 
+                                I also strive to use programming to visualize and make meaningful connections from big data sets. 
+                                I am currently seeking a Software Engineer or a Data Scientist role to use my software engineering skills to build scalable and meaningful projects. <br><br>
                                 If you would like to contact me, please email me at <a href="mailto:daultonbaird1@gmail.com" target="_blank" title="Link to email me">daultonbaird1@gmail.com</a>.
                             </p>
                         </div>
                         <div class="row mb-3" id="projects">
-                            <h4 class="display-4">My Projects</h4>
-                            <div class="accordion " id="accordionExample">
+                            <h6 class="display-6">Projects</h6>
+                            <div class="accordion " id="projectsAccordion">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingOne">
                                         <button class="accordion-button collapsed bg-success text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                            <h4>Project 1: CentralSquare Property Tax Application</h4> 
+                                            <h4>CentralSquare Property Tax Application</h4> 
                                         </button>
                                     </h2>
-                                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#projectsAccordion">
                                         <div class="accordion-body">
-                                            <h5>Project Sponsor: CentralSquare Technologies</h5>
+                                            <h5>Sponsor: CentralSquare Technologies</h5>
                                             <p>
                                                 <table class="table">
                                                     <tr>
-                                                        <th>Project Link</th>
-                                                        <td><a href="https://www.centralsquare.com/solutions/public-administration-software" target="_blank" title="CentralSquare Public Admin website">CentralSquare Public Admin website</a></td>
+                                                        <th>Link</th>
+                                                        <td><a href="https://www.centralsquare.com/solutions/public-administration-software/property-tax" target="_blank" title="CentralSquare Property Tax application">CentralSquare Property Tax application</a></td>
                                                     </tr>
                                                     <tr>
-                                                        <th>Project Description</th>
-                                                        <td>This project involves building a web-based property tax application for tax clerks to use to manage a citizen's property taxes.</td>
+                                                        <th>Description</th>
+                                                        <td>This project involved building a web-based property tax application for users to calculate, process, and bill a citizen's property taxes.</td>
                                                     </tr>
                                                     <tr>
-                                                        <th>My Responsibilities</th>
+                                                        <th>Responsibilities</th>
                                                         <td>
                                                             <ul>
-                                                                <li>Developing, testing, and releasing new features written in C# using the .NET framework.</li>
-                                                                <li>Design and write unit tests that provide adequate code coverage for an entire module.</li>
-                                                                <li>Analyzed and debugged error and warning logs using Elastic Kibana logging system.</li>
-                                                                <li>Deploying to test environments using Continuous Integration (CI) and Continuous Delivery (CD) pipelines, Docker, and Azure Devops.</li>
+                                                                <li>Wrote, reviewed, tested, and refactored C# code using .NET 6 framework and Model-View-Controller (MVC) standards including Language-Integrated Query (LINQ) queries and SQL.</li>
+                                                                <li>Improved SQL queries using Language-Integrated Queries (LINQ) in C#.</li>
+                                                                <li>Deploying to test environments using Continuous Integration and Continuous Delivery (CI/CD) pipelines, Docker, and Azure Devops.</li>
                                                                 <li>Applied RESTful standards to REST API endpoints and used Postman and Swagger UI for testing the API.</li>
+                                                                <li>Optimized file storage and sending of emails using AWS S3 and AWS SES. Implemented user management using AWS IAM.</li>
+                                                                <li>Developed, tested, and deployed nuget package releases for Vue.js frontend framework.</li>
+                                                                <li>Analyzed and debugged error and warning logs using Elastic Kibana logging system.</li>
                                                                 <li>Participate in creating coding standards, best practices documentation, and quality release notes.</li>
-                                                                <li>Developing, testing, and releasing package updates for the Vue.js frontend framework.</li>
-                                                                <li>Communicate with and conduct software demonstrations for internal and external customers.</li>
-                                                                <li>Improved on my SQL querying abilities and learned how to utilize Language-Integrated Query (LINQ) queries in C#.</li>
+                                                                <li>Communicated with internal and external clients and conducted software demonstrations.</li>
+                                                                <li>Designed and wrote unit, integration, and UI tests that provide full code coverage and test scenarios.</li>
                                                             </ul>
 
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <th>Project Framework</th>
-                                                        <td>This project was built using <span class="badge bg-secondary">C#</span> <span class="badge bg-secondary">Vue.js</span> <span class="badge bg-secondary">SQL</span> <span class="badge bg-secondary">JavaScript</span> <span class="badge bg-secondary">Docker</span> <span class="badge bg-secondary">Kibana</span></td>
+                                                        <th>Tech Stack</th>
+                                                        <td>
+                                                            <span class="badge bg-secondary">C#</span> 
+                                                            <span class="badge bg-secondary">Vue.js</span> 
+                                                            <span class="badge bg-secondary">SQL</span> 
+                                                            <span class="badge bg-secondary">JavaScript</span> 
+                                                            <span class="badge bg-secondary">AWS</span>
+                                                            <span class="badge bg-secondary">Docker</span> 
+                                                            <span class="badge bg-secondary">Kibana</span>
+                                                        </td>
                                                     </tr>
                                                 </table>
-                                                <!--
-                                                <h6>Sample Screenshot (Click to visit)</h6>
-                                                <div class="img-container">
-                                                    <a href="https://curriculum.ok.ubc.ca/" target="_blank" title="Curriculum MAP link">
-                                                        <img class="project-img" src="resources\img\ubc-curriculum-map.png" width=800/> 
-                                                    </a>
-                                                </div>
-                                                -->
                                             </p>
                                         </div>
                                     </div>
@@ -147,138 +120,94 @@
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingTwo">
                                         <button class="accordion-button collapsed bg-success text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                            <h4>Project 2: UBC Curriculum MAP</h4> 
+                                            <h4>Time Estimator </h4>
                                         </button>
                                     </h2>
-                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#projectsAccordion">
                                         <div class="accordion-body">
-                                            
-                                            <h5>Project Sponsor: UBC Okanagan - Office of the Provost and Vice Principal</h5>
+                                            <h5>Sponsor: UBC Okanagan - School of Engineering</h5>
                                             <p>
                                                 <table class="table">
                                                     <tr>
-                                                        <th>Project Link</th>
-                                                        <td><a href="https://curriculum.ok.ubc.ca/" target="_blank" title="UBC Curriculum MAP website link">UBC Curriculum MAP website</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>Project Description</th>
-                                                        <td>This project's goal was to create a website to to allow instructors and program coordinators to work collaboratively on both new and existing courses and 
-                                                            their mapping of course learning outcomes to program learning outcomes. </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>My Responsibilities</th>
-                                                        <td>
-                                                            <ul>
-                                                                <li>Act as Technical Lead and oversee the work completed by the Capstone team assigned to this project.</li>
-                                                                <li>Create dynamic charts and graphs for the data visualization section of the website.</li>
-                                                                <li>Update and maintain frontend pages including the Home, About, and FAQ pages.</li>
-                                                                <li>Create and Perform Database migrations using PHP and SQL.</li>
-                                                                <li>Conduct thorough testing on the code to ensure any vulnerabilities and bugs were fixed.</li>
-                                                                <li>Push fully tested code to production server using Filezilla Secure File Transfer Protocol (SFTP).</li>
-                                                            </ul>
-
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>Project Framework</th>
-                                                        <td>This project was built using <span class="badge bg-secondary">Laravel</span> <span class="badge bg-secondary">PHP</span> <span class="badge bg-secondary">SQL</span> <span class="badge bg-secondary">HTML5</span> <span class="badge bg-secondary">CSS</span> <span class="badge bg-secondary">Bootstrap</span> <span class="badge bg-secondary">JavaScript</span></td>
-                                                    </tr>
-                                                </table>
-                                                <h6>Sample Screenshot (Click to visit)</h6>
-                                                <div class="img-container">
-                                                    <a href="https://curriculum.ok.ubc.ca/" target="_blank" title="Curriculum MAP link">
-                                                        <img class="project-img" src="resources\img\ubc-curriculum-map.png" width=800/> 
-                                                    </a>
-                                                </div>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingThree">
-                                        <button class="accordion-button collapsed bg-success text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                            <h4>Project 3: Time Estimator </h4>
-                                        </button>
-                                    </h2>
-                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                        <div class="accordion-body">
-                                            <h5>Project Sponsor: UBC Okanagan - Office of the Provost and Vice Principal</h5>
-                                            <p>
-                                                <table class="table">
-                                                    <tr>
-                                                        <th>Project Link</th>
+                                                        <th>Link</th>
                                                         <td><a href="https://ubcoapps.elearning.ubc.ca/time-estimator/" target="_blank" title="Time Estimator link">Time Estimator</a></td>
                                                     </tr>
                                                     <tr>
-                                                        <th>Project Description</th>
+                                                        <th>Description</th>
                                                         <td>This project was conducted to create a tool for instructors to calculate the amount of time students spend on their course(s) per week and per term to
                                                             ensure that they are not overwhelmed.
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <th>My Responsibilities</th>
+                                                        <th>Responsibilities</th>
                                                         <td>
                                                             <ul>
-                                                                <li>Modify existing code to create the project based on supervisor's specifications.</li>
-                                                                <li>Add new functionality based on specifications and to create ease of use.</li>
-                                                                <li>Test the project for potential bugs or error messages and fix them.</li>
-                                                                <li>Accommodate for a variety of invalid user text responses.</li>
-                                                                <li>Work with CSV export files using R libraries to perform data formatting.</li>
-                                                                <li>Conduct user tests with people at UBCO and make revisions based on their feedback.</li>
+                                                                <li>Modified existing code to create the project based on supervisor's specifications.</li>
+                                                                <li>Added new functionality based on specifications and to create ease of use.</li>
+                                                                <li>Tested the project for potential bugs or error messages and fix them.</li>
+                                                                <li>Accommodated for a variety of invalid user text responses.</li>
+                                                                <li>Worked with CSV export files using R libraries to perform data formatting.</li>
+                                                                <li>Conducted user tests with stakeholders and users to make revisions based on their feedback.</li>
                                                             </ul>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <th>Project Framework & Language(s)</th>
-                                                        <td>This project was built using <span class="badge bg-secondary">R</span> <span class="badge bg-secondary">JavaScript</span> <span class="badge bg-secondary">JQuery</span> <span class="badge bg-secondary">HTML5</span> <span class="badge bg-secondary">CSS</span> </td>
+                                                        <th>Tech Stack</th>
+                                                        <td>
+                                                            <span class="badge bg-secondary">R</span> 
+                                                            <span class="badge bg-secondary">JavaScript</span> 
+                                                            <span class="badge bg-secondary">JQuery</span> 
+                                                            <span class="badge bg-secondary">HTML5</span> 
+                                                            <span class="badge bg-secondary">CSS</span> 
+                                                        </td>
                                                     </tr>
                                                 </table>   
-                                                <h6>Sample Screenshot (click to visit)</h6>
+                                                <h6>Sample Screenshot</h6>
                                                 <div class="img-container">
-                                                    <a href="https://ubcoapps.elearning.ubc.ca/time-estimator/" target="_blank" title="Time Estimator link">
-                                                        <img class="project-img" src="resources\img\ubc-time-estimator.png" width=800/> 
-                                                    </a>
+                                                    <img class="project-img" src="resources\img\ubc-time-estimator.png" width=800/>
                                                 </div> 
                                                 
                                         </div>
                                     </div>
                                 </div>
                                 <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingFour">
-                                        <button class="accordion-button collapsed bg-success text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                            <h4>Project 4: Text Analyzer </h4>
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed bg-success text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            <h4>Text Analyzer </h4>
                                         </button>
                                     </h2>
-                                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#projectsAccordion">
                                         <div class="accordion-body">
-                                            <h5>Project Sponsor: UBC Okanagan - MakerspaceUBCO</h5>
+                                            <h5>Sponsor: UBC Okanagan - Makerspace UBCO</h5>
                                             <p>
                                                 <table class="table">
                                                     <tr>
-                                                        <th>Project Link</th>
+                                                        <th>Link</th>
                                                         <td><a href="https://github.com/daultonb/TextAnalyzer" target="_blank" title="Text Analyzer link">Text Analyzer</a></td>
                                                     </tr>
                                                     <tr>
-                                                        <th>Project Description</th>
+                                                        <th>Description</th>
                                                         <td>This project was conducted to create a tool that could analyze student essay responses for keywords. 
-                                                            This would save the essay's grader time by reducing the number of essay's that they would have to read.</td>
+                                                            This would save the essay grader's time by reducing the number of essays that they would have to read.</td>
                                                     </tr>
                                                     <tr>
-                                                        <th>My Responsibilities</th>
+                                                        <th>Responsibilities</th>
                                                         <td>
                                                             <ul>
-                                                                <li>Create the project based on supervisor's specifications.</li>
-                                                                <li>Test the project for potential bugs or error messages and fix them.</li>
-                                                                <li>Accommodate for a variety of invalid user text responses.</li>
-                                                                <li>Work with LMS (Canvas) export files using Python libraries to perform data formatting.</li>
-                                                                <li>Create version releases after features had been tested.</li>
-                                                                <li>Create Windows batch files & Executables to run the script without using an IDE.</li>
+                                                                <li>Designed and implemented the project based on supervisor's specifications.</li>
+                                                                <li>Tested the project for potential bugs or error messages and fix them.</li>
+                                                                <li>Accommodated for a variety of invalid user text responses.</li>
+                                                                <li>Worked with CSV export files using Python libraries to perform data formatting.</li>
+                                                                <li>Created version release schedule and informative documentation after features had been tested.</li>
+                                                                <li>Created Windows batch files & Executables to run the script without exposing the code.</li>
                                                             </ul>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <th>Project Framework & Language(s)</th>
-                                                        <td>This project was built using <span class="badge bg-secondary">Python</span></td>
+                                                        <th>Tech Stack</th>
+                                                        <td>
+                                                            <span class="badge bg-secondary">Python</span>
+                                                        </td>
                                                     </tr>
                                                 </table>   
                                                 <h6>Sample Screenshots</h6>
@@ -291,47 +220,108 @@
                                     </div>
                                 </div>
                                 <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingFive">
-                                        <button class="accordion-button collapsed bg-success text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                            <h4>Project 5: DDR Discussion Forum</h4>
+                                    <h2 class="accordion-header" id="headingFour">
+                                        <button class="accordion-button collapsed bg-success text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                            <h4>UBC Curriculum MAP</h4> 
                                         </button>
                                     </h2>
-                                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#projectsAccordion">
                                         <div class="accordion-body">
-                                            <h5>Project Sponsor: UBC Okanagan - Web Development Course Project</h5>
+                                            
+                                            <h5>Sponsor: UBC Okanagan - Office of the Provost and Vice Principal</h5>
                                             <p>
                                                 <table class="table">
                                                     <tr>
-                                                        <th>Project Link</th>
+                                                        <th>Link</th>
+                                                        <td><a href="https://curriculum.ok.ubc.ca/" target="_blank" title="UBC Curriculum MAP website link">UBC Curriculum MAP website</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Description</th>
+                                                        <td>This project's goal was to create a website to to allow instructors and program coordinators to work collaboratively on both new and existing courses and 
+                                                            their mapping of course learning outcomes to program learning outcomes. </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Responsibilities</th>
+                                                        <td>
+                                                            <ul>
+                                                                <li>Act as Technical Lead and oversee the work completed by the Capstone team assigned to this project.</li>
+                                                                <li>Create dynamic charts and graphs for the data visualization section of the website.</li>
+                                                                <li>Update and maintain frontend pages including the Home, About, and FAQ pages.</li>
+                                                                <li>Create and Perform Database migrations using PHP and SQL.</li>
+                                                                <li>Conduct thorough testing on the code to ensure any vulnerabilities and bugs were fixed.</li>
+                                                                <li>Push fully tested code to production server using Secure File Transfer Protocol (SFTP).</li>
+                                                            </ul>
+
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Tech Stack</th>
+                                                        <td>
+                                                            <span class="badge bg-secondary">Laravel</span> 
+                                                            <span class="badge bg-secondary">PHP</span> 
+                                                            <span class="badge bg-secondary">SQL</span> 
+                                                            <span class="badge bg-secondary">JavaScript</span>
+                                                            <span class="badge bg-secondary">HTML5</span> 
+                                                            <span class="badge bg-secondary">CSS</span> 
+                                                            <span class="badge bg-secondary">Bootstrap</span> 
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                <h6>Sample Screenshot</h6>
+                                                <div class="img-container">
+                                                    <img class="project-img" src="resources\img\ubc-curriculum-map.png" width=800/> 
+                                                </div>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFive">
+                                        <button class="accordion-button collapsed bg-success text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                            <h4>DDR Discussion Forum</h4>
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#projectsAccordion">
+                                        <div class="accordion-body">
+                                            <h5>Sponsor: UBC Okanagan - Web Development Course</h5>
+                                            <p>
+                                                <table class="table">
+                                                    <tr>
+                                                        <th>Link</th>
                                                         <td><a href="https://github.com/daultonb/COSC360Project" target="_blank" title="DDR Discussion Forum link">DDR Discussion Forum</a></td>
                                                     </tr>
                                                     <tr>
-                                                        <th>Project Description</th>
+                                                        <th>Description</th>
                                                         <td>This was the final project for the Web Development (<i>COSC360</i>) course at UBC Okanagan. The project was designed to build a website which allowed registered users to 
                                                             engage in online discussions and unregistered users to view discussions similar to forums such as Reddit</td>
                                                     </tr>
                                                     <tr>
-                                                        <th>My Responsibilities</th>
+                                                        <th>Responsibilities</th>
                                                         <td>
                                                             <ul>
-                                                                <li>Create the frontend components for the Navbar, Search bar, Homepage layout, sidebar, and Genres page.</li>
-                                                                <li>Implement "infinite scroll" functionality so that the user could dynamically load new posts.</li>
-                                                                <li>Configure Post preview feature that allows the user to preview their post in a modal before posting to the site.</li>
-                                                                <li>Conform with Web Design principles including utilizing 2 column layout and accommodating accessibility issues.</li>
-                                                                <li>Implement responsive design philosophies including the usage of mobile devices to interact with the website.</li>
+                                                                <li>Created the frontend components for the Navbar, Search bar, Homepage layout, sidebar, and Genres page.</li>
+                                                                <li>Implemented "infinite scroll" functionality so that the users could dynamically load new posts.</li>
+                                                                <li>Configured Post preview feature that allows the users to preview their post in a modal before posting to the site.</li>
+                                                                <li>Conformed with Web Design principles including utilizing 2 column layout and accommodating accessibility issues.</li>
+                                                                <li>Implemented responsive design philosophies including the usage of mobile devices to interact with the website.</li>
                                                             </ul>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <th>Project Framework & Language(s)</th>
-                                                        <td>This project was built using <span class="badge bg-secondary">ReactJS</span> <span class="badge bg-secondary">NodeJS</span> <span class="badge bg-secondary">JQuery</span> <span class="badge bg-secondary">HTML5</span> <span class="badge bg-secondary">CSS</span> <span class="badge bg-secondary">SQL</span>.</td>
+                                                        <th>Tech Stack</th>
+                                                        <td>
+                                                            <span class="badge bg-secondary">ReactJS</span> 
+                                                            <span class="badge bg-secondary">NodeJS</span> 
+                                                            <span class="badge bg-secondary">JQuery</span> 
+                                                            <span class="badge bg-secondary">HTML5</span> 
+                                                            <span class="badge bg-secondary">CSS</span> 
+                                                            <span class="badge bg-secondary">SQL</span>
+                                                        </td>
                                                     </tr>
                                                 </table> 
                                                 <br>
-                                                <h6>Sample Screenshots</h6>
+                                                <h6>Sample Screenshot</h6>
                                                 <div class="img-container">
-                                                    <img class="project-img" src="https://raw.githubusercontent.com/daultonb/COSC360Project/main/graphics/screenshot-3.png" width=800/>
-                                                    <br>
                                                     <img class="project-img" src="https://raw.githubusercontent.com/daultonb/COSC360Project/main/graphics/screenshot-4.png" width=800/> 
                                                 </div> 
                                         </div>
@@ -340,36 +330,40 @@
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingSix">
                                         <button class="accordion-button collapsed bg-success text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                            <h4>Project 6: Chess Openings Trainer</h4>
+                                            <h4>Chess Openings Trainer</h4>
                                         </button>
                                     </h2>
-                                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#projectsAccordion">
                                         <div class="accordion-body">
-                                            <h5>Project Sponsor: UBC Okanagan - Capstone Project</h5>
+                                            <h5>Sponsor: UBC Okanagan - Capstone</h5>
                                             <p>
                                                 <table class="table">
                                                     <tr>
-                                                        <th>Project Description</th>
+                                                        <th>Description</th>
                                                         <td>This was the final project for my Computer Science degree. For this project our clients were working on a web application for users to practice chess openings versus an automated opponent. 
                                                             This included asynchronous updates to game objects as well as live feedback on missed moves and the ability to go back in time to a previous state in the game.
                                                             This was built from scratch using the JavaScript framework React with NodeJS on the backend and some HTML and CSS for styling of the website.
                                                             There was also research conducted into artificial intelligence for the opponent to finish the game after the opening was completed but the feature was cut due to time constraints.</td>
                                                     </tr>
                                                     <tr>
-                                                        <th>My Responsibilities</th>
+                                                        <th>Responsibilities</th>
                                                         <td>
                                                             <ul>
-                                                                <li>Build a base website using HTML & CSS</li>
-                                                                <li>Implement game objects which were stored in memory and could be updated asynchronously.</li>
-                                                                <li>Provide live feedback to the user when a mistake was made as well as a button to jump to a previous point in the game.</li>
-                                                                <li>Research into AI chess bots that could be used to complete the game prior to successfully completing the opening.</li>
-                                                                <li>Tracking, analysis, and presentation of project metrics using Jira including burndown charts, task completion, hour logging, and feature documentation.</li>
+                                                                <li>Built a base website using HTML & CSS</li>
+                                                                <li>Implemented game objects using Node that could be updated asynchronously.</li>
+                                                                <li>Provided live feedback to the user using React to inform them when a mistake was made and a history of instances in the game to be able to return to.</li>
+                                                                <li>Tracked, analyzed, and presented project metrics using Jira including burndown charts, task completion, hour logging, and feature documentation.</li>
                                                             </ul>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <th>Project Framework & Language(s)</th>
-                                                        <td>This project was built using <span class="badge bg-secondary">ReactJS</span> <span class="badge bg-secondary">NodeJS</span> <span class="badge bg-secondary">HTML</span> <span class="badge bg-secondary">CSS</span>.</td>
+                                                        <th>Tech Stack</th>
+                                                        <td>
+                                                            <span class="badge bg-secondary">ReactJS</span> 
+                                                            <span class="badge bg-secondary">NodeJS</span> 
+                                                            <span class="badge bg-secondary">HTML</span> 
+                                                            <span class="badge bg-secondary">CSS</span>
+                                                        </td>
                                                     </tr>
                                                 </table>
                                         </div>
@@ -380,16 +374,13 @@
                         </div>
                         
                         <div class="row mb-2">
-                            <h4 id="cv" class="display-4">Resume</h4>
-                            <iframe src="resources\DaultonBairdResume.pdf" height="900px">
-                                This browser does not support PDFs. Please download the PDF to view it: <a href="resources\DaultonBaird-Resume(1).pdf" download>Download</a>
+                            <h6 id="cv" class="display-6">Resume</h6>
+                            <iframe src="resources\DaultonBairdResumeOnePage.pdf" height="900px">
+                                This browser does not support PDFs. Please download the PDF to view it: <a href="resources\DaultonBairdResumeOnePage.pdf" download>Download</a>
                             </iframe>
                         </div>
-                        
-                        
                     </div>
                 </div>
-            <div class="background"></div>
         </div>
     </div>
 </body>
